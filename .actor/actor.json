@@ -1,0 +1,13 @@
+{
+    "actorSpecification": 1,
+    "name": "sec-ipo-registration-tracker",
+    "title": "SEC IPO Registration Tracker",
+    "description": "Track new SEC Form S-1 filings, the registration statement a company files ahead of a US IPO. Search by keyword, with an option to include S-1/A amendments.",
+    "version": "0.1",
+    "meta": {
+        "templateId": "custom-no-proxy"
+    },
+    "input": "./input_schema.json",
+    "output": "./output_schema.json",
+    "dockerfile": "../Dockerfile"
+}

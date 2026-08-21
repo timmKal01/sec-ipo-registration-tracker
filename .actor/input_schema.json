@@ -1,0 +1,38 @@
+{
+    "title": "SEC IPO Registration Tracker Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "keyword": {
+            "title": "Keyword",
+            "type": "string",
+            "editor": "textfield",
+            "description": "Free-text search across the filing (matches the registrant's name and filing text). Leave blank for all new S-1 filings market-wide."
+        },
+        "includeAmendments": {
+            "title": "Include amendments (S-1/A)",
+            "type": "boolean",
+            "editor": "checkbox",
+            "description": "By default only original S-1 filings are returned (new IPO registrations). Turn this on to also include S-1/A amendments to already-filed registrations.",
+            "default": false
+        },
+        "daysBack": {
+            "title": "Days back",
+            "type": "integer",
+            "editor": "number",
+            "description": "How many days back from today to search, by filing date.",
+            "default": 30,
+            "minimum": 1,
+            "maximum": 120
+        },
+        "maxResults": {
+            "title": "Max results",
+            "type": "integer",
+            "editor": "number",
+            "description": "Maximum number of filings to return, most recently filed first.",
+            "default": 50,
+            "minimum": 1,
+            "maximum": 100
+        }
+    }
+}

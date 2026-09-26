@@ -1,0 +1,73 @@
+{
+    "actorSpecification": 1,
+    "fields": {},
+    "views": {
+        "overview": {
+            "title": "Overview",
+            "transformation": {
+                "fields": [
+                    "accessionNumber",
+                    "form",
+                    "isAmendment",
+                    "registrantName",
+                    "registrantCik",
+                    "registrantTickers",
+                    "filingDate",
+                    "businessLocation",
+                    "incorporatedIn",
+                    "sicCode",
+                    "filingUrl"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "accessionNumber": {
+                        "label": "Accession number",
+                        "format": "text"
+                    },
+                    "form": {
+                        "label": "Form",
+                        "format": "text"
+                    },
+                    "isAmendment": {
+                        "label": "Is amendment",
+                        "format": "boolean"
+                    },
+                    "registrantName": {
+                        "label": "Registrant name",
+                        "format": "text"
+                    },
+                    "registrantCik": {
+                        "label": "Registrant CIK",
+                        "format": "text"
+                    },
+                    "registrantTickers": {
+                        "label": "Registrant tickers",
+                        "format": "text"
+                    },
+                    "filingDate": {
+                        "label": "Filing date",
+                        "format": "text"
+                    },
+                    "businessLocation": {
+                        "label": "Business location",
+                        "format": "text"
+                    },
+                    "incorporatedIn": {
+                        "label": "Incorporated in",
+                        "format": "text"
+                    },
+                    "sicCode": {
+                        "label": "SIC code",
+                        "format": "text"
+                    },
+                    "filingUrl": {
+                        "label": "Filing URL",
+                        "format": "link"
+                    }
+                }
+            }
+        }
+    }
+}
